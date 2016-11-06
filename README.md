@@ -1,4 +1,4 @@
-# Rozszerzony problem śpiącego golibrody (Hiltzer)
+# Rozszerzony problem śpiącego golibrody (Hilzer)
 
 Łukasz Siudek
 
@@ -10,7 +10,7 @@ Każdy klient po wejściu sprawdza, co robi golibroda. Jeśli śpi, klient budzi
 
 Problem, jaki może się pojawić w naiwnej implementacji to przypadek, gdy klient zauważa, że golibroda jest zajęty. Udaje się do poczekalni, a w tym samym czasie golibroda kończy wykonanie swojej pracy i sprawdza poczekalnię, która jest jeszcze pusta, gdyż nowy klient jeszcze nie zajął tam miejsca. W tej sytuacji golibroda udaje się spać i nie obudzi się, dopóki nie pojawi się nowy klient, mimo, że jeden cały czas oczekuje na niego w kolejce.
 
-## Wersja roszerzona
+## Wersja rozszerzona
 
 W wersji rozszerzonej gabinet składa się z trzech krzeseł, które obsługuje trzech golibrodów. W poczekalni znajduje jedynie się czteroosobowa kanapa oraz miejsca stojące, przy czym poczekalnia może pomieścić łącznie nie więcej niż 20 miejsc.
 
