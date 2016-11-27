@@ -12,7 +12,8 @@
 #include "barber.h"
 #include "customer.h"
 
-#define WAITING_ROOM_CAP 5
+#define WAITING_ROOM_CAP 16
+#define SOFA_CAP 4
 
 class barbershop {
 	std::mutex mtx_enter;
@@ -23,7 +24,7 @@ class barbershop {
 	bool exit_flag;
 	bool cash_register;
 	std::queue <customer*> waiting_room;
-	//std::queue <customer*> sofa;
+	std::queue <customer*> sofa;
 	std::queue <barber*> barbers_asleep;
 
 public:
@@ -33,7 +34,8 @@ public:
 	}
 	void close();
 	bool closed() { return exit_flag; }
-	bool full() { return waiting_room.size() == WAITING_ROOM_CAP; }
+	bool waiting_room_full() { return waiting_room.size() == WAITING_ROOM_CAP; }
+	bool sofa_full() { return sofa.size() == SOFA_CAP; }
 
 	bool begin_work(barber& barb);
 	void cut_hair(barber& barb);
