@@ -12,7 +12,7 @@ Problem, jaki może się pojawić w naiwnej implementacji to przypadek, gdy klie
 
 ## Wersja rozszerzona
 
-W wersji rozszerzonej gabinet składa się z trzech krzeseł, które obsługuje trzech golibrodów. W poczekalni znajduje jedynie się czteroosobowa kanapa oraz miejsca stojące, przy czym poczekalnia może pomieścić łącznie nie więcej niż 20 miejsc.
+W wersji rozszerzonej gabinet składa się z *n* krzeseł, które obsługuje *m* golibrodów. W poczekalni znajduje jedynie się czteroosobowa kanapa oraz miejsca stojące, przy czym poczekalnia może pomieścić łącznie nie więcej niż 20 miejsc.
 
 Klient po wejściu do poczekalni siada na kanapie, o ile jest miejsce. W przeciwnym przypadku zajmuje miejsce stojące. Gdy pewien golibroda jest wolny, wybiera klienta który najdłużej siedział na kanapie. Jego miejsce zajmuje klient, który najdłużej zajmował miejsce stojące. Gdy golibroda kończy golenie, zwraca się do klienta po zapłatę. Ponieważ jest tylko jedna kasa, opłata jest pobierana tylko od jednego klienta na raz.
 
